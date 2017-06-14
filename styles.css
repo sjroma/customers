@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer_container {
+  width: 25%;
+}
+
+.pic_container {
+ 
+}
+
+.customer_info {
+  
+}

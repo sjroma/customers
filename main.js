@@ -36,9 +36,9 @@ fetch('https://randomuser.me/api/?results=12&nat=us')
         return `
         <div class="customer_container">
           <div class="picture_container">
-            <img class="profile_pic src="${customers.picture.large}">
+            <img class="profile_pic" src=${customers.picture.large}>
           </div>
-          <div class="customer_info>
+          <div class="customer_info">
             <ul>
               <li class="name">${customers.name.first} ${customers.name.last}</li>
               <li class="email">${customers.email}</li>
@@ -51,7 +51,9 @@ fetch('https://randomuser.me/api/?results=12&nat=us')
       `
       }
       
+      // this should probably be a loop
       let markup = `
+        <h1>Internal Company Directory</h1>
         <div class="list">
           ${customersToHTML (users[0])}
           ${customersToHTML (users[1])}

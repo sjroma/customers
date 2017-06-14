@@ -1,16 +1,45 @@
 .list {
   display: flex;
   flex-wrap: wrap;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  text-align: center;
 }
 
 .customer_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 25%;
 }
 
-.pic_container {
- 
+.profile_pic {
+ height: 280px;
+  width: 280px;
 }
 
-.customer_info {
-  
+.name, .email {
+  text-transform: uppercase;
+}
+
+.name {
+  border-bottom: 2px solid green;
+  font-weight: 900;
+  width: 75%;
+}
+
+.email {
+  line-height: 2.5em;
+}
+
+.addr1, .addr2 {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
 }
